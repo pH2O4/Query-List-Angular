@@ -1,0 +1,10 @@
+<div id="Filter">
+    <mat-selection-list id="profissional-list" #profissionalsSelected>
+      <mat-list-option class="profissional" *ngFor="let profissional of profissionals">
+        {{profissional}}
+      </mat-list-option>
+    </mat-selection-list>
+    <p style="text-align: center;  width: 200px;">
+      Options selected: {{profissionalsSelected.selectedOptions.selected.length}}
+    </p>
+  </div>
