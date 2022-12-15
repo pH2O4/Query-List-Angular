@@ -1,0 +1,17 @@
+#profissional-list-query {
+    width: 200px;
+}
+
+#Filter {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    border-color: #ffb261;
+    border-style: solid;
+    border-radius: 9px;
+    background-color: #ffc3db;
+    margin: 100px 80px;
+}

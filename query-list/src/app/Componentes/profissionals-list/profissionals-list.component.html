@@ -1,0 +1,20 @@
+<table mat-table [dataSource]="profissionalsList" class="AllprofissionalsList">
+  <ng-container matColumnDef="Name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let profissional"> {{profissional.Name}} </td>
+  </ng-container>
+  <ng-container matColumnDef="WorkArea">
+    <th mat-header-cell *matHeaderCellDef> WorkArea </th>
+    <td mat-cell *matCellDef="let profissional"> {{profissional.WorkArea}} </td>
+  </ng-container>
+  <ng-container matColumnDef="LinkedinWebSite">
+    <th mat-header-cell *matHeaderCellDef> LinkedinWebSite </th>
+    <td mat-cell *matCellDef="let profissional"> {{profissional.LinkedinWebSite}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Age">
+    <th mat-header-cell *matHeaderCellDef> Age</th>
+    <td mat-cell *matCellDef="let profissional"> {{profissional.Age}} </td>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</table>
