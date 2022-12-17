@@ -1,6 +1,8 @@
 <div id="Filter">
-    <mat-selection-list id="profissional-query" #profissionalsSelected>
-      <mat-list-option class="profissional" *ngFor="let profissional of profissionals">
+    <mat-selection-list #list id="profissional-query" #profissionalsSelected>
+      <mat-list-option class="profissional" *ngFor="let profissional of profissionals" 
+      [selected]="profissional" 
+        (click)="onAreaListControlChanged(list)" [value]="profissional">>
         {{profissional}}
       </mat-list-option>
     </mat-selection-list>

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 
+import { FormsModule } from '@angular/forms';
 
 import { QueryListComponent } from './Componentes/query-list/query-list.component';
 import { ProfissionalsListComponent } from './Componentes/profissionals-list/profissionals-list.component';
@@ -23,7 +24,8 @@ import { ProfissionalsListComponent } from './Componentes/profissionals-list/pro
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
