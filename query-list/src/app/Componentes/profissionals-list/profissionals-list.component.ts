@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Profissional } from 'src/app/Interfaces/profissional';
 
 @Component({
@@ -6,10 +6,15 @@ import { Profissional } from 'src/app/Interfaces/profissional';
   templateUrl: './profissionals-list.component.html',
   styleUrls: ['./profissionals-list.component.css']
 })
-export class ProfissionalsListComponent {
+export class ProfissionalsListComponent implements OnInit{
   profissionalsList: Profissional[] = [
     {Name: "Pedro", WorkArea:"Developer", LinkedinWebSite: "www.myprofile.com", Age: 99},
     {Name: "Pedro", WorkArea:"Developer", LinkedinWebSite: "www.myprofile.com", Age: 99}
   ]
   displayedColumns: string[] = ['Name', 'WorkArea', 'LinkedinWebSite', 'Age'];
+
+  constructor() { }
+  ngOnInit(): void {
+    
+  }
 }
