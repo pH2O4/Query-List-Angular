@@ -10,8 +10,8 @@ export class QueryListComponent {
   profissionals: string[] = ['Developer', 'Doctor', 'Teacher', 'Soccer Player', 'Seller'];
   selectedOptions: string[] = [];
 
-  onAreaListControlChanged(list: any){
-    this.selectedOptions = list.selectedOptions.selected.map(test => test.value)
+  onAreaListControlChanged(list: any) {
+    this.selectedOptions = list.selectedOptions.selected.map((teste: any) => teste.value);
     console.log(this.selectedOptions)
-}
+  }
 }
